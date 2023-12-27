@@ -51,8 +51,7 @@ tasks.register('applicationCodeCoverageReport', JacocoReport) {
 
 jacoco {
     toolVersion = "0.8.11"
-    reportsDirectory = layout.buildDirectory.dir('JacocoReport') as DirectoryProperty
-    //reportsDir = file("$buildDir/customJacocoReportDir")
+    reportsDirectory = layout.buildDirectory.dir('JacocoReport')
 }
 
 jacocoTestReport {
